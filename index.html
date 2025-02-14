@@ -45,15 +45,27 @@
           <span class="focus-input100"></span>
         </div>
 
-        <label class="label-input100" for="email">email</label>
-        <div class="wrap-input100">
+        <label class="label-input100" for="email">電話</label>
+        <div class="wrap-input100 validate-input" data-validate="姓名為必填">
+          <input id="phone" class="input100" type="text" placeholder="Eg.+852 1234-5678">
+          <span class="focus-input100"></span>
+        </div>        
+
+        <label class="label-input100" for="email">電郵</label>
+        <div class="wrap-input100 validate-input" data-validate="電郵為必填">
           <input id="email" class="input100" type="text" placeholder="Eg. example@email.com">
+          <span class="focus-input100"></span>
+        </div>        
+
+        <label class="label-input100" for="email">地址</label>
+        <div class="wrap-input100 validate-input" data-validate="地址為必填">
+          <input id="address" class="input100" type="text" placeholder="填寫要進行改建的單位地址">
           <span class="focus-input100"></span>
         </div>
 
-        <label class="label-input100" for="email">評分(最高五分) *</label>
-        <div class="wrap-input100 validate-input" data-validate="煩請評分">
-          <select class="form-control" id="score" style="border: 0px;">
+        <label class="label-input100" for="email">地址類別</label>
+        <div class="wrap-input100 validate-input" data-validate="請選擇">
+          <select class="form-control" id="ask1" style="border: 0px;">
             <option>1</option>
             <option>2</option>
             <option>3</option>
@@ -164,19 +176,31 @@
           url: "https://docs.google.com/forms/d/e/1FAIpQLSeijRuLDQE62gbapDYgd_3pbmg7GyWY1CWPVeaEK-TiLDKzPw/formResponse",
           crossDomain: true,//解決跨網域CORS的問題
           data: {// entry.xxxxx 這些需要填寫您表單裡面的值，與其相互對應
-            "entry.2040133429": $('#name').val(),
-            "entry.304089069": $('#email').val(),
-            "entry.207113062": $('#score').val(),
-            "entry.1310220291": $('#message').val()
+            "entry.367116086": $('#name').val(),
+            "entry.1222150790": $('#phone').val(),
+            "entry.783637272": $('#email').val(),
+            "entry.2121914026": $('#address').val(),
+            "entry.761071235": $('#ask1').val(),
+            "entry.2027275236": $('#ask2').val(),
+            "entry.412629331": $('#ask3').val(),
+            "entry.740371181": $('#ask4').val(),
+            "entry.1946758096": $('#ask5').val(),
+            "entry.1286231016": $('#ask6').val()
           },
           type: "POST", //因為是要進行insert的動作，故事用POST
           dataType: "JSONP",
           complete: function () {
             //完成後把這些欄位清空
             $('#name').val('')
+            $('#phone').val('')
             $('#email').val('')
-            $('#score').val('')
-            $('#message').val('')
+            $('#address').val('')
+            $('#ask1').val('')
+            $('#ask2').val('')
+            $('#ask3').val('')
+            $('#ask4').val('')
+            $('#ask5').val('')
+            $('#ask6').val('')
             //最後跳轉到感謝的頁面
             window.location.replace("thank.html");
           }
