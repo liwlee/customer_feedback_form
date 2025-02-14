@@ -161,13 +161,19 @@
       if ($('#name').val() && $('#score').val()) {//需要先確認必填欄位是否填寫
         $.ajax({
           // url為Google Form按下submit的aciotn
-          url: "https://docs.google.com/forms/d/e/1FAIpQLSeijRuLDQE62gbapDYgd_3pbmg7GyWY1CWPVeaEK-TiLDKzPw/formResponse",
+          url: "https://docs.google.com/forms/d/e/1FAIpQLScSCVZJvWaj5dNHeW_EHcKDRV-36dcqUMLCdeClEY1-Xv7mDA/formResponse",
           crossDomain: true,//解決跨網域CORS的問題
           data: {// entry.xxxxx 這些需要填寫您表單裡面的值，與其相互對應
-            "entry.2040133429": $('#name').val(),
-            "entry.304089069": $('#email').val(),
-            "entry.207113062": $('#score').val(),
-            "entry.1310220291": $('#message').val()
+            "entry.367116086": $('#name').val(),
+            "entry.1222150790": $('#phone').val(),
+            "entry.783637272": $('#email').val(),
+            "entry.2121914026": $('#address').val(),
+            "entry.761071235": $('#Q1').val(),
+            "entry.2027275236": $('#Q2').val(),
+            "entry.412629331": $('#Q3').val(),
+            "entry.740371181": $('#Q4').val(),
+            "entry.1946758096": $('#Q5').val(),
+            "entry.1286231016": $('#Q6').val()
           },
           type: "POST", //因為是要進行insert的動作，故事用POST
           dataType: "JSONP",
