@@ -1,112 +1,124 @@
 <!DOCTYPE html>
-<html lang="zh-TW">
+<html lang="en">
 
 <head>
   <title>取得報價</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--===============================================================================================-->
   <link rel="icon" type="image/png" href="images/icons/favicon.ico" />
+  <!--===============================================================================================-->
   <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+  <!--===============================================================================================-->
   <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+  <!--===============================================================================================-->
   <link rel="stylesheet" type="text/css" href="fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+  <!--===============================================================================================-->
   <link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+  <!--===============================================================================================-->
   <link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+  <!--===============================================================================================-->
   <link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+  <!--===============================================================================================-->
   <link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+  <!--===============================================================================================-->
   <link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
+  <!--===============================================================================================-->
   <link rel="stylesheet" type="text/css" href="css/util.css">
   <link rel="stylesheet" type="text/css" href="css/main.css">
+  <!--===============================================================================================-->
 </head>
 
 <body>
+
 
   <div class="container-contact100">
     <div class="wrap-contact100">
       <form id="google-form" class="contact100-form validate-form">
         <span class="contact100-form-title">
-          取得報價
+          取得報價2351
         </span>
-
-        <label class="label-input100" for="name">姓名 *</label>
+         
+        <label class="label-input100" for="first-name">姓名 *</label>
         <div class="wrap-input100 validate-input" data-validate="姓名為必填">
           <input id="name" class="input100" type="text" placeholder="王大明">
           <span class="focus-input100"></span>
         </div>
-
-        <label class="label-input100" for="phone">電話 *</label>
+        
+        <label class="label-input100" for="email">電話 *</label>
         <div class="wrap-input100 validate-input" data-validate="電話為必填">
-          <input id="phone" class="input100" type="text" placeholder="例如：123-456-7890">
+          <input id="phone" class="input100" type="text" placeholder="王大明">
           <span class="focus-input100"></span>
         </div>
-
-        <label class="label-input100" for="email">電郵 *</label>
+         
+        <label class="label-input100" for="email">email *</label>
         <div class="wrap-input100 validate-input" data-validate="電郵為必填">
-          <input id="email" class="input100" type="text" placeholder="例如：example@email.com">
+          <input id="email" class="input100" type="text" placeholder="Eg. example@email.com">
           <span class="focus-input100"></span>
         </div>
-
+                 
         <label class="label-input100" for="address">地址 *</label>
         <div class="wrap-input100 validate-input" data-validate="地址為必填">
           <input id="address" class="input100" type="text" placeholder="填寫要進行改建的單位地址">
           <span class="focus-input100"></span>
         </div>
-
-        <label class="label-input100" for="ask1">地址類別 *</label>
-        <div class="wrap-input100 validate-input" data-validate="煩請選擇">
+        
+        <label class="label-input100" for="message">地址類別 *</label>
+        <div class="wrap-input100 validate-input" data-validate="煩請評分">
           <select class="form-control" id="ask1" style="border: 0px;">
             <option>公屋或居屋</option>
             <option>私人樓宇</option>
-            <option>(其他/商業用途)</option>
-          </select>
+            <option>( 其他/商業用途 )</option>
+            </select>
         </div>
 
-        <label class="label-input100" for="ask2">裝修預算 *</label>
-        <div class="wrap-input100 validate-input" data-validate="煩請選擇">
+        <label class="label-input100" for="message">裝修預算 *</label>
+        <div class="wrap-input100 validate-input" data-validate="煩請評分">
           <select class="form-control" id="ask2" style="border: 0px;">
-            <option>輕型系列 (HK$100,000 ~ 200,000)</option>
-            <option>普通系列 (HK$200,000 ~ 400,000)</option>
-            <option>奢華系列 (HK$400,000 或以上)</option>
-            <option>(其他/商業用途)</option>
-          </select>
+            <option>輕型系列 (HK$100,000 ~ 200,000 )</option>
+            <option>普通系列 (HK$200,000 ~ 400,000 )</option>
+            <option>奢華系列 (HK$400,000 或以上 )</option>
+            <option>( 其他/商業用途 )</option>
+            </select>
         </div>
 
-        <label class="label-input100" for="ask3">該單位規劃居住人數 *</label>
-        <div class="wrap-input100 validate-input" data-validate="煩請選擇">
+        <label class="label-input100" for="message">該單位規劃居住人數 *</label>
+        <div class="wrap-input100 validate-input" data-validate="煩請評分">
           <select class="form-control" id="ask3" style="border: 0px;">
             <option>獨居人士</option>
             <option>2 人</option>
             <option>3 人或以上</option>
-            <option>(其他/商業用途)</option>
+            <option>( 其他/商業用途 )</option>
           </select>
         </div>
 
-        <label class="label-input100" for="ask4">居住或便用者人數中是否有小孩 *</label>
-        <div class="wrap-input100 validate-input" data-validate="煩請選擇">
+        <label class="label-input100" for="message">居住或便用者人數中是否有小孩 *</label>
+        <div class="wrap-input100 validate-input" data-validate="煩請評分">
           <select class="form-control" id="ask4" style="border: 0px;">
             <option>否</option>
             <option>有 1 個</option>
             <option>有 2 個或以上</option>
-            <option>(其他/商業用途)</option>
+            <option>( 其他/商業用途 )</option>
           </select>
         </div>
 
-        <label class="label-input100" for="ask5">居住或便用者人數中是否有長者或殘疾人士 *</label>
-        <div class="wrap-input100 validate-input" data-validate="煩請選擇">
+        <label class="label-input100" for="message">居住或便用者人數中是否有長者或殘疾人士 *</label>
+        <div class="wrap-input100 validate-input" data-validate="煩請評分">
           <select class="form-control" id="ask5" style="border: 0px;">
             <option>否</option>
-            <option>是(注：年滿60歲以上獨居長者或殘疾人士可以享有優惠)</option>
-            <option>(其他/商業用途)</option>
+            <option>是( 注 : 年滿60歲以上獨居長者或殘疾人士可以享有優惠 )</option>
+            <option>( 其他/商業用途 )</option>
           </select>
         </div>
 
-        <label class="label-input100" for="ask6">寵物類別 *</label>
-        <div class="wrap-input100 validate-input" data-validate="煩請選擇">
+        <label class="label-input100" for="message">寵物類別 *</label>
+        <div class="wrap-input100 validate-input" data-validate="煩請評分">
           <select class="form-control" id="ask6" style="border: 0px;">
             <option>沒有飼養</option>
             <option>大型動物 (犬隻)</option>
             <option>中型動物 (猫隻)</option>
             <option>小型動物 ( 爬蟲類及魚類、鼠兔類、其他寵物)</option>
-            <option>(其他/商業用途)</option>
+            <option>( 其他/商業用途 )</option>
           </select>
         </div>
 
@@ -115,6 +127,7 @@
             送出
           </button>
         </div>
+      </form>
 
       <div class="contact100-more flex-col-c-m" style="background-image: url('images/bg-01.jpg');">
         <div class="flex-w size1 p-b-47">
