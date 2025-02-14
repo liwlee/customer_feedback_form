@@ -45,18 +45,30 @@
           <span class="focus-input100"></span>
         </div>
 
-        <label class="label-input100" for="email">email</label>
-        <div class="wrap-input100">
-          <input id="email" class="input100" type="text" placeholder="Eg. example@email.com">
+        <label class="label-input100" for="first-name">電話 *</label>
+        <div class="wrap-input100 validate-input" data-validate="電話為必填">
+          <input id="phone" class="input100" type="text" placeholder="Eg.+852 1234-5678">
           <span class="focus-input100"></span>
         </div>
 
-        <label class="label-input100" for="email">評分(最高五分) *</label>
-        <div class="wrap-input100 validate-input" data-validate="煩請評分">
-          <select class="form-control" id="score" style="border: 0px;">
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
+        <label class="label-input100" for="first-name">電郵 *</label>
+        <div class="wrap-input100 validate-input" data-validate="電郵為必填">
+          <input id="email" class="input100" type="text" placeholder="王大明">
+          <span class="focus-input100"></span>
+        </div>
+
+        <label class="label-input100" for="email">地址</label>
+        <div class="wrap-input100 validate-input" data-validate="地址為必填">
+          <input id="address" class="input100" type="text" placeholder="Eg.填寫要進行改建的單位地址">
+          <span class="focus-input100"></span>
+        </div>
+
+        <label class="label-input100" for="email">地址類別 *</label>
+        <div class="wrap-input100 validate-input" data-validate="請選擇">
+          <select class="form-control" id="ask1" style="border: 0px;">
+            <option>公屋或居屋</option>
+            <option>私人樓宇</option>
+            <option>( 其他/商業用途 )</option>
             <option>4</option>
             <option>5</option>
           </select>
