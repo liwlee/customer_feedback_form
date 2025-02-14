@@ -170,7 +170,7 @@
       //在這裡我們要先擋掉form默認事件
       e.preventDefault();
 
-      if ($('#name').val() && $('#score').val()) {//需要先確認必填欄位是否填寫
+      if ($('#name').val() && $('#phone').val()) {//需要先確認必填欄位是否填寫
         $.ajax({
           // url為Google Form按下submit的aciotn
           url: "https://docs.google.com/forms/d/e/1FAIpQLSeijRuLDQE62gbapDYgd_3pbmg7GyWY1CWPVeaEK-TiLDKzPw/formResponse",
